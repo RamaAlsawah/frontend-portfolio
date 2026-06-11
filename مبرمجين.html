@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المبرمجين والعملاء</title>
+    <link rel="stylesheet" href="مبرمجين.css">
+</head>
+<body>
+    <header>
+        <h1>منصة المبرمجين والعملاء</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#developers">المبرمجين</a></li>
+                <li><a href="#clients">العملاء</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>مرحبا بكم في منصتنا</h2>
+        <p>نحن هنا لمساعدتك في العثور على المبرمجين المناسبين لمشاريعك أو إيجاد عملاء لمهاراتك.</p>
+    </section>
+
+    <section id="developers">
+        <h2>المبرمجين</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>مبرمج 1</h3>
+                <p>تخصص: تطوير الويب</p>
+                <button onclick="showDetails('مبرمج 1')">عرض التفاصيل</button>
+            </div>
+            <div class="card">
+                <h3>مبرمج 2</h3>
+                <p>تخصص: تصميم واجهات المستخدم</p>
+                <button onclick="showDetails('مبرمج 2')">عرض التفاصيل</button>
+            </div>
+            <!-- أضف المزيد من المبرمجين هنا -->
+        </div>
+    </section>
+
+    <section id="clients">
+        <h2>العملاء</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>عميل 1</h3>
+                <p>مشروع: تطبيق موبايل</p>
+                <button onclick="showDetails('عميل 1')">عرض التفاصيل</button>
+            </div>
+            <div class="card">
+                <h3>عميل 2</h3>
+                <p>مشروع: موقع إلكتروني</p>
+                <button onclick="showDetails('عميل 2')">عرض التفاصيل</button>
+            </div>
+            <!-- أضف المزيد من العملاء هنا -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <form id="contactForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 منصة المبرمجين والعملاء. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="مبرمجين.js"></script>
+</body>
+</html>
